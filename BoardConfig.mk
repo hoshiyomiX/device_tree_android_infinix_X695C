@@ -106,3 +106,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
 include vendor/infinix/Infinix-X695C/BoardConfigVendor.mk
+
+# Maintainer/Version
+TW_DEVICE_VERSION := Beta-Gilanggegea
