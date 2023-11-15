@@ -1,4 +1,4 @@
-# Android device tree for Infinix Infinix X695C (Infinix-X695C)
+# Lineage device tree for Infinix Note 10 Pro NFC (X695C)
 
 ```
 #
