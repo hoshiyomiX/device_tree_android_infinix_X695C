@@ -15,7 +15,7 @@
 #
 
 DEVICE_PATH := device/infinix/note10pro
-HOT10S_PREBUILT := device/infinix/note10pro-prebuilt
+NOTE10PRO_PREBUILT := device/infinix/note10pro-prebuilt
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -38,9 +38,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1640
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2460
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Bluetooth
 PRODUCT_PACKAGES += \
