@@ -1,30 +1,33 @@
-# Device Tree for Infinix Hot 10
+# Device Tree for Infinix Note 10 Pro NFC
 
-Infinix Hot 10 is a entry-level smartphone from Infinix. Infinix Hot 10 released in October 2020.
+Infinix Note 10 Pro is smartphone from Infinix. Infinix Note 10 Pro released in June 2021.
 
 ## Device specifications
 
 | Feature                 | Specification                                                   |
 | :---------------------- | :---------------------------------------------------------------|
-| Chipset                 | Mediatek Helio G70 mt6768 (12nm)                                |
-| CPU                     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55)         |
-| GPU                     | Mali-G52 2EEMC2                                                 |
-| Memory                  | 3/4/6 GB                                                        |
+| Chipset                 | Mediatek Helio G95 (12nm)                                       |
+| CPU                     | Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)        |
+| GPU                     | Mali-G76 MC4                                                    |
+| Memory                  | 6/8   GB                                                        |
 | Shipped Android Version | 10.0                                                            |
 | Storage                 | 64/128 GB                                                       |
 | SIM                     | Dual SIM (Nano-SIM, dual stand-by)                              |
 | MicroSD                 | Dedicated Slot                                                  |
-| Battery                 | 5200 mAh Li-Po (non-removable)                                  |
-| Dimensions              | 171.1 x 77.6 x 8.9 mm                                           |
-| Display                 | 6.78 inches, 109.2 cm2 (~82.2% screen-to-body ratio)            |
-| Rear Camera 1           | 16 MP, f/1.8, (wide) PDAF                                       |
-| Rear Camera 2           | 2 MP (macro)						    |
-| Rear Camera 3           | 2 MP (depth)                            	                    |
-| Rear Camera 4           | QVGA (low-light)                                                |
-| Front Camera            | 8 MP (wide)                                                     |
-| Fingerprint             | Rear-mounted                                                    |
+| Battery                 | 5000 mAh (non-removable)                                        |
+| Dimensions              | 172.8 x 78.3 x 7.8 mm                                           |
+| Display                 | 6.95 inches, 114.7 cm2 (~84.8% screen-to-body ratio)            |
+| Rear Camera 1           | 64 MP, (wide), 1/1.72", 0.8µm, PDAF                             |
+| Rear Camera 2           | 8 MP, 120˚ (ultrawide)						                              |
+| Rear Camera 3           | 2 MP, f/2.4, (depth)                            	              |
+| Rear Camera 4           | 2 MP, f/2.4, (monochrome)                                       |
+| Front Camera            | 16 MP, (wide)                                                   |
+| Fingerprint             | Side-mounted                                                    |
 | Sensors                 | Accelerometer, Gyro, Proximity, Compass                         |
+| Models                  | X695C                                                           |
 
 ## Device picture
 
-![Infinix Hot 10](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-2.jpg)
+![Infinix Note 10 Pro](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-note-10-pro-1.jpg)
+
+![Infinix Note 10 Pro](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-note-10-pro-2.jpg)
