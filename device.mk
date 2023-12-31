@@ -20,6 +20,9 @@ NOTE10PRO_PREBUILT := device/infinix/note10pro-prebuilt
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Ims
+$(call inherit-product, device/infinix/note10pro/configs/permissions/com.mediatek.ims.plugin.xml)
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
