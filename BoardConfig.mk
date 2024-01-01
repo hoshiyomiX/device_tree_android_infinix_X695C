@@ -190,4 +190,4 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/config/vintf/manifest.xml
 PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_SKUS += note10pro
 DEVICE_MANIFEST_NOTE10PRO_FILES := $(DEVICE_PATH)/configs/vintf/manifest_note10pro.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/vintf/framework_compatibility_matrix.xml
