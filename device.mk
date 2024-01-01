@@ -32,6 +32,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/infinix/note10pro/note10pro-vendor.mk)
 
+# vendor manifest
+PRODUCT_COPY_FILES += \
+    device/infinix/note10pro/config/vintf/manifest.xml:system/vendor/etc/manifest.xml
+
+# vendor in
+$(call add-dependency, out/target/product/note10pro/gen/ETC/vendor_manifest.xml_intermediates/manifest.xml, \
+    device/infinix/note10pro/config/vintf/manifest.xml)
+
+# vendor out
+$(call add-dir-dependency, out/target/product/note10pro/gen/ETC/vendor_manifest.xml_intermediates/)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml \
