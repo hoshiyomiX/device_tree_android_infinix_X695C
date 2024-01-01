@@ -32,17 +32,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/infinix/note10pro/note10pro-vendor.mk)
 
-# vendor manifest
-PRODUCT_COPY_FILES += \
-    device/infinix/note10pro/config/vintf/manifest.xml:system/vendor/etc/manifest.xml
-
-# vendor in
-$(call add-dependency, out/target/product/note10pro/gen/ETC/vendor_manifest.xml_intermediates/manifest.xml, \
-    device/infinix/note10pro/config/vintf/manifest.xml)
-
-# vendor out
-$(call add-dir-dependency, out/target/product/note10pro/gen/ETC/vendor_manifest.xml_intermediates/)
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml \
@@ -160,14 +149,20 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay
 
+# Vintf
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/framework_compatibility_matrix \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_note10pro.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/manifest_note10pro.xml
+
 # APN's
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
 # permission move to system
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
-    $(DEVICE_PATH)/configs/permissions/com.mediatek.ims.plugin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.plugin.xml \
+ $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+$(DEVICE_PATH)/configs/permissions/com.mediatek.ims.plugin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.plugin.xml \
     $(DEVICE_PATH)/configs/permissions/com.mediatek.wfo.legacy.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.wfo.legacy.xml
 
 # [DNM] Temp permissions
