@@ -149,13 +149,6 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay
 
-# Vintf
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/compatibility_matrix.xml \
-    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/framework_compatibility_matrix \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/manifest.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest_note10pro.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/vintf/manifest_note10pro.xml
-
 # APN's
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
