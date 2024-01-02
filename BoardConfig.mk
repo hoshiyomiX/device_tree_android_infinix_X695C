@@ -124,8 +124,7 @@ BOARD_MAIN_SIZE := 6012043264
 BOARD_MAIN_PARTITION_LIST := \
     product \
     system \
-    system_ext \
-    vendor
+    system_ext 
 
 BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_MAIN_PARTITION_LIST))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4))
@@ -188,6 +187,6 @@ BOARD_VNDK_VERSION := current
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/config/vintf/manifest.xml
 PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_DEVICE_FILE := $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml
 DEVICE_MANIFEST_SKUS += note10pro
 DEVICE_MANIFEST_NOTE10PRO_FILES := $(DEVICE_PATH)/configs/vintf/manifest_note10pro.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/vintf/framework_compatibility_matrix.xml
