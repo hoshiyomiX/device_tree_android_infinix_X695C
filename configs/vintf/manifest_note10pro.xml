@@ -27,6 +27,7 @@
         manifest_mmservice.xml
         manifest_nwk_opt.xml
         manifest_gnss.xml
+        manifest_note10pro.xml
         manifest_tranlog.xml
         manifest_tranlogconfig.xml
         manifest.xml
