@@ -1,0 +1,30 @@
+cc_library_static {
+    name: "android.hardware.vibrator-impl.note10pro",
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk_platform",
+    ],
+    export_include_dirs: ["include"],
+    srcs: [
+        "Vibrator.cpp",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.vibrator-service.note10pro",
+    relative_install_path: "hw",
+    init_rc: ["vibrator-note10pro.rc"],
+    vintf_fragments: ["vibrator-note10pro.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk_platform",
+    ],
+    static_libs: [
+        "android.hardware.vibrator-impl.note10pro",
+    ],
+    srcs: ["main.cpp"],
+}
