@@ -393,7 +393,7 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor
 
 # MTK Jars (for IMS)
-include vendor/redmi/note10pro-ims/note10pro-ims-vendor.mk
+include vendor/infinix/note10pro-ims/note10pro-ims-vendor.mk
 
 PRODUCT_BOOT_JARS += \
     mediatek-common \
