@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/note10pro
+DEVICE_PATH := device/infinix/note10pro
 
 # A/B
 AB_OTA_UPDATER := true
