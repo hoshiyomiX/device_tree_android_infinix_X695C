@@ -8,6 +8,14 @@ DEVICE_PATH := device/infinix/X695C
 #KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
+AB_OTA_UPDATER := false
+AB_OTA_PARTITIONS += \
+    boot \
+    product \
+    system \
+    system_ext \
+    vbmeta
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
